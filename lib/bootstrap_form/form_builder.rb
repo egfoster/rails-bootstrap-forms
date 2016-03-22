@@ -255,7 +255,7 @@ module BootstrapForm
     end
 
     def error_class
-      "has-error"
+      "has-danger"
     end
 
     def feedback_class
@@ -276,7 +276,7 @@ module BootstrapForm
 
       target = (obj.class == Class) ? obj : obj.class
 
-      target_validators = if target.respond_to? :validators_on 
+      target_validators = if target.respond_to? :validators_on
                             target.validators_on(attribute).map(&:class)
                           else
                             []

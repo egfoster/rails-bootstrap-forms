@@ -143,7 +143,7 @@ To add custom classes to the field's label:
 #### Required Fields
 
 A label that is associated with a required field is automatically annotated with
-a `required` CSS class. You are free to add any appropriate CSS to style 
+a `required` CSS class. You are free to add any appropriate CSS to style
 required fields as desired.  One example would be to automatically add an
 asterisk to the end of the label:
 
@@ -448,7 +448,7 @@ error will be displayed below the field. Rails normally wraps the fields in a
 div (field_with_errors), but this behavior is suppressed. Here's an example:
 
 ```html
-<div class="form-group has-error">
+<div class="form-group has-danger">
   <label class="control-label" for="user_email">Email</label>
   <input class="form-control" id="user_email" name="user[email]" type="email" value="">
   <span class="help-block">can't be blank</span>
