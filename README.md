@@ -451,7 +451,7 @@ div (field_with_errors), but this behavior is suppressed. Here's an example:
 <div class="form-group has-danger">
   <label class="control-label" for="user_email">Email</label>
   <input class="form-control" id="user_email" name="user[email]" type="email" value="">
-  <span class="help-block">can't be blank</span>
+  <small class="text-help">can't be blank</small>
 </div>
 ```
 
